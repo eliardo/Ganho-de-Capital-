@@ -1,0 +1,24 @@
+{
+  "name": "ganho capital",
+  "version": "1.0.0",
+  "main": "src/controller/controller.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node-dev --poll src/controller/controller.ts",
+    "test": "jest --passWithNoTests --silent=false --verbose=true --noStackTrace --runInBand",
+    "test:unit": "jest --silent=false --verbose=true -c jest-unit-config.js",
+    "test:coverage": "jest --coverage -c jest-co-config.js",
+    "test:integrated": "jest -c jest-integrated-config.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.24",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.2.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {}
+}
